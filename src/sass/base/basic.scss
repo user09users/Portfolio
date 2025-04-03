@@ -1,3 +1,5 @@
+@use"/src/sass/base/variables.scss" as *;
+
 h1,
 h2,
 h3,
@@ -31,11 +33,18 @@ img {
 }
 
 html {
-    font-family: "Boldonse", sans-serif;
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
 
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $orange;
+    margin-top: 25px;
 }

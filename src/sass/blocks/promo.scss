@@ -40,7 +40,7 @@
         text-decoration: none;
         transition: 0.5s all;
         text-align: center;
-        width: 135px;
-        height: 45px;
+        min-width: 135px;
+        min-height: 45px;
     }
 }

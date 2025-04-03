@@ -1,7 +1,13 @@
 .title {
+    color: rgb(0, 0, 0);
     font-size: 36px;
     line-height: 60px;
     font-weight: 700;
+
+    &_fz12 {
+        font-size: 12px;
+        line-height: 18px;
+    }
 
     &_fz14 {
         font-size: 14px;
