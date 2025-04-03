@@ -10,12 +10,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "esbuild": "^0.25.2",
     "nanoid": "^3.3.11",
     "picocolors": "^1.1.1",
     "postcss": "^8.5.3",
     "rollup": "^4.38.0",
-    "source-map-js": "^1.2.1"
+    "source-map-js": "^1.2.1",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "postcss-pxtorem": "^6.1.0",

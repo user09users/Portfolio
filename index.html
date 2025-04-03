@@ -7,11 +7,68 @@
     <meta name="description" content="My own portfolio">
     <meta name="author" content="Mikhiei Ulianov">
     <title>Portfolio</title>
-
 </head>
 
 <body>
-    <h1 class="title">hello</h1>
+    <aside class="sidepanel">
+        <div class="sidepanel__text title_fz16"><span>Social</span></div>
+        <div class="sidepanel__devider"></div>
+        <a href="https://github.com/user09users" class="sidepanel__link">
+            <div class="icon-github-circled"></div>
+        </a>
+        <a href="#" class="sidepanel__link">
+            <div class="icon-instagram"></div>
+        </a>
+        <a href="#" class="sidepanel__link">
+            <div class="icon-facebook"></div>
+        </a>
+    </aside>
+
+    <div class="menu">
+        <div class="menu__block">
+
+            <div class="menu__close icon-cancel"></div>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
+                    <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
+                    <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
+                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu__social">
+                <a href="https://github.com/user09users" class="icon-github-circled"></a>
+                <a href="#" class="icon-instagram"></a>
+                <a href="#" class="icon-facebook"></a>
+            </div>
+        </div>
+        <div class="menu__overlay"></div>
+    </div>
+
+    <div class="promo">
+        <div class="container">
+            <div class="promo__hamburger">
+                <span></span>
+                <span class="long"></span>
+                <span></span>
+            </div>
+
+
+            <div class="title title_fz16 promo__subtitle animate__animated animate__bounceInUp wow  ">My name
+                is
+                Mikhiei Ulianov
+            </div>
+            <div class="title title_fz48 promo__title">I'm web-developer from town Kiev</div>
+
+            <div class="promo__btns">
+                <a href="#" class="promo__link btn__promo btn__promo_active">Portfolio</a>
+                <a href="#" class="promo__link btn__promo ">About me</a>
+            </div>
+        </div>
+    </div>
 
     <script type="module" src="/src/js/main.js"></script>
 </body>
