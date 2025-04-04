@@ -8,6 +8,7 @@ import "/src/sass/style.scss";
 
 hamburger();
 button();
+new WOW().init();
 
 
 

@@ -6,8 +6,8 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 400px 670px;
-        grid-template-rows: minmax(245pxm auto) minmax(255px, auto);
-        grid-auto-rows: minmax(245pxm auto);
+        grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+        grid-auto-rows: minmax(245px, auto);
         column-gap: 70px;
         row-gap: 40px;
     }
@@ -24,7 +24,7 @@
         padding-top: 6px;
 
         .divider {
-            margin-top: 0;
+            margin: 0;
         }
     }
 
@@ -37,15 +37,15 @@
     &__text {
         margin-top: 20px;
         font-size: 14px;
-        font-weight: 500;
         line-height: 21px;
     }
 
     &__skills {
         display: grid;
-        grid-auto-rows: 1fr;
         grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
-        gap: 20px 50px;
+        grid-auto-rows: 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
 
         &-item {
             display: grid;
@@ -68,6 +68,5 @@
             font-size: 12px;
             line-height: 18px;
         }
-
     }
 }
