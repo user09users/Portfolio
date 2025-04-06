@@ -73,7 +73,23 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="/src/img/Photo.jpeg" alt="photo">
+                    <!--                     <img srcset="/src/img/Photo-min.jpeg 300w
+                                /src/img/Photo-min.jpeg 400w"
+                        sizes="(max-width: 576px) 280px
+                                (min-width: 577px) 400px"
+                    src="/src/img/Photo.jpeg" alt="photo"> -->
+
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="/src/img/Photo-min.jpeg">
+                        <source media="(min-width: 577px)" srcset="/src/img/Photo.jpeg">
+                        <img src="/src/img/Photo.jpeg" alt="photo">
+                    </picture>
+
+                    <!--                     <picture>
+                        <source type="image/webp" srcset="/src/img/Photo-min.jpeg">
+                        <source media="(min-width: 577px)" srcset="/src/img/Photo.jpeg">
+                        <img src="/src/img/Photo.jpeg" alt="photo">
+                    </picture> -->
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title animate__animated animate__bounceInLeft wow">About me</h2>
@@ -346,7 +362,7 @@
         </div>
     </section>
 
-    <!--     <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Portfolio</h2>
             <div class="title title_fz36 title__section-subtitle">My works</div>
@@ -361,9 +377,9 @@
                 <a href="#" class="portfolio__item horizontal"><img src="/src/img/projects/mac.jpeg" alt="mac"></a>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!--     <section class="price">
+    <section class="price">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Price-list</h2>
             <div class="price__wrapper">
@@ -411,8 +427,8 @@
                 </div>
             </div>
         </div>
-    </section> -->
-    <!-- 
+    </section>
+
     <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
@@ -461,7 +477,7 @@
                 </div>
             </div>
         </div>
-    </section>  -->
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script type="module" src="/src/js/main.js"></script>
